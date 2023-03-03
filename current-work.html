@@ -1,0 +1,18 @@
+---
+title: Current work
+---
+<h1>Special Interest Groups</h1>
+Current work is organised in Special Interest Groups, open to all interested parties.
+
+{% assign sigs = site.data.sigs %}
+{% for sig in sigs %}
+  <h1>{{ sig.name }}</h1>
+  {% if sig.chairs %}<h2>Chair(s): {{ sig.chairs }}</h2>{% endif %}
+  <p>
+    
+    {% if sig.activity %}<strong>Activity:</strong> {{ sig.activity }}<br>{% endif %}
+    {% if sig.mail %}{{ sig.mail }}<br>{% endif %}
+    {% if sig.status %}{{ sig.status }}<br>{% endif %}
+  </p>
+  
+{% endfor %}

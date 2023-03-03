@@ -1,0 +1,113 @@
+// Common to everybody
+
+// Background
+body {
+  background-color: White;
+  max-width: $max-width;
+  margin: 0 auto $margin-std auto; // top right bottom left
+}
+
+head, nav, .content, footer {
+  margin: 0 $margin-std 0 $margin-std;
+}
+
+.content {
+  margin-top: $margin-small;
+}
+
+footer {
+  clear: both;
+  padding-top: $padding-big;
+}
+// Fonts, colors, titles
+
+* {
+  font-family: "Noto Sans", "Myriad Pro Regular", sans-serif;
+  font-size: $font-size;
+  color: $color-std;
+  line-height: $line-height-std;
+  text-align: justify;
+}
+
+b {
+  color:inherit;
+}
+
+h1, th, strong, .focus {
+  font-weight: bold;
+  color: $color-strong;
+}
+
+h1 {
+  padding-top: $padding-big; // padding and not margin because margins collapse
+  font-size: $big-font-size;
+}
+
+h2 {
+  margin-left: $padding-big;
+}
+
+p, td {
+  margin: $padding-std 0;
+}
+
+.update, .update * {
+  font-style: italic;
+  color: $color-strong;
+  font-size: $small-font-size;
+}
+
+hr {
+  border: $border-std solid $color-std;
+  border-radius: $padding-small;
+  clear: both;
+  margin: $padding-std;
+  margin-left: $margin-std;
+  margin-right: $margin-std;
+  opacity: $opacity-std;
+}
+
+// links
+a:hover {
+  color: $color-strong;
+}
+
+// images
+img[style~="float:left"] {
+  margin: 0;
+  margin-right: $padding-big;
+}
+
+img[style~="float:right"] {
+  margin: 0;
+  margin-left: $padding-big;
+}
+
+a img { //DOIs
+  width: 10vw;
+}
+
+// boxes
+div.box {
+  width: $margin-big;
+  line-height: $margin-big;
+  border: $border-std solid $color-strong;
+  box-sizing: border-box;
+  box-shadow: $padding-std $padding-std $color-fade;
+  margin: $padding-big;
+  padding: $padding-std;
+  float: left;
+  clear: right;
+  
+  a, p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+}
+
+div.box + h1, div.box + img, div.box + p {
+  clear: both;
+}

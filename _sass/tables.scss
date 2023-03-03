@@ -1,0 +1,82 @@
+// tables
+table {
+  border-collapse: collapse;
+  margin: $padding-big auto;
+  clear: both;
+}
+
+th, td {
+  padding-left: $padding-std;
+  padding-right: $padding-std;
+  text-align: justify;
+  border: $border-std solid $color-std;
+}
+
+// deliverables and milestones tables
+.clickable:hover {
+  background-color: $color-fade;
+}
+
+tr.delivered {
+  background-color: $color-green;
+}
+
+tr.late {
+  background-color: $color-red;
+}
+
+tr.upcoming {
+  background-color: $color-orange;
+}
+
+td.date {
+  white-space: nowrap;
+  text-align: center;
+}
+
+tr.toggled-row {
+  display: none;
+}
+
+tr.dow {
+  font-style: italic;
+}
+
+table.del {
+  width: 100%;
+}
+
+// tasks tables
+.task {
+  th, td {
+  border: none;
+  border-top: $border-std solid $color-std;
+  border-bottom: $border-std solid $color-std;
+  }
+
+  tr th:first-child, tr td:first-child {
+    border-left: $border-std solid $color-std;
+  }
+
+  tr th:last-child, tr td:last-child {
+    border-right: $border-std solid $color-std;
+  }
+}
+
+// timeline
+.timeline {
+
+  tr:nth-child(3) {
+    background-color: $color-fade;
+  }
+
+  th, td {
+    padding: 0 $padding-small/1.2 0 $padding-small/1.2;
+    text-align: center;
+  }
+
+  .invisible td {
+    color: White;
+    border: none;
+  }
+}

@@ -1,0 +1,20 @@
+# called items with site.data.sigs
+- name: FAIR implementation
+  mail: FAIR@PaNSIG.eu
+  chairs: Andy Götz (ESRF), Nicolas Soler (ALBA)
+  status: starting
+  activity: Maintain the toolkit for the implementation of FAIR at PaN facilities
+  
+- name: Workflows
+  mail: workflows@PaNSIG.eu
+  chairs: Majid Ounsy (SOLEIL), Fabio Dall'Antonia (Eu-XFEL)
+  status: starting
+  activity: Organise contributions to VISA, share good practices and community tools for reproducible workflows
+  
+- name: EOSC
+  mail: eosc@PaNSIG.eu
+  chairs:
+  status: under evaluation
+  activity:  
+  
+  

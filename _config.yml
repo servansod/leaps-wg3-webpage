@@ -1,0 +1,17 @@
+# after changes to this file, you need to restart the jekyll server (ctrl-c + bundle exec jekyll serve)
+collections:
+  outcomes:
+  sigs:
+
+# set defaults for layouts (except the ones in _layouts)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+# configuration Variables
+# baseurl: ""
+# url: "/"
+# url: "localhost:4000"

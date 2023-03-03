@@ -1,0 +1,56 @@
+# called items with site.data.outcomes
+- name: PaNET ontology
+  project: ExPaNDS
+  description: Taxonomy of experimental techniques relevant for the Photon and Neutron community
+  status: in production
+  doi: 10.5281/zenodo.7684470
+  last-update: 2023-02-28
+  keywords: standard, metadata, PID, search
+
+- name: Nexus ontology
+  project: ExPaNDS
+  description: Representation of the formal NeXus definitions, automatically created from NeXus definition files
+  status: in production
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-02-28
+  keywords: standard, metadata, PID, search
+
+- name: Ontology API service
+  project: ExPaNDS
+  description: Software to expand a photon and neutron technique (PaNET) term into an equivalent search query that includes all PaNET sub-term
+  status: prototype
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-02-28
+  keywords: search
+
+- name: Search API for data catalogues
+  project: ExPaNDS, PaNOSC
+  description: Backend API for services to search PaN data catalogues
+  status: prototype
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-02-28
+  keywords: search, catalogue
+
+- name: OAI-PMH endpoint for data catalogues
+  project: ExPaNDS, PaNOSC
+  description: Plugins for SciCat and Icat community data catalogues to facilitate the deployment of an OAI-PMH endpoint
+  status: in production
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-02-28
+  keywords: standard, metadata, search, catalogue
+
+- name: PaN training catalogue
+  project: ExPaNDS
+  description: Catalogue of training material, workflows and events for the PaN community
+  status: in production
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-02-28
+  keywords: training
+
+- name: Metadata framework
+  project: ExPaNDS
+  description: 
+  status: 
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-02-28
+  keywords: standard, metadata

@@ -1,0 +1,20 @@
+---
+title: Outcomes
+---
+{% assign date_today = "today" | date: "%Y-%m-%d" %}
+{% assign sorted_outcomes = site.data.outcomes %}
+
+{% for outcome in sorted_outcomes %}
+  <h1>
+    {{ outcome.name }}
+    {% if outcome.doi %}<a href="https://doi.org/{{ outcome.doi }}"><img src="https://zenodo.org/badge/DOI/{{ outcome.doi }}.svg" alt="(link)" style="float: right"></a>{% endif %}
+  </h1>
+  
+  <p>
+  {% if outcome.description %}<strong>Description:</strong> {{ outcome.description }}<br>{% endif %}
+  {% if outcome.project %}<strong>Project:</strong> {{ outcome.project }}<br>{% endif %}
+  {% if outcome.status %}<strong>Status:</strong> {{ outcome.status | capitalize }}<br>{% endif %}
+  {% if outcome.last-update %}<strong>Last update:</strong> {{ outcome.last-update | date: "%Y-%m-%d" }}<br>{% endif %}
+  {% if outcome.keywords %}<strong>Keywords:</strong> {{ outcome.keywords }}<br>{% endif %}
+  </p>
+{% endfor %}

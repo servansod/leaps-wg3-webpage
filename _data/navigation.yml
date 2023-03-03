@@ -1,0 +1,12 @@
+# called items with site.data.navigation
+- name: Home
+  link: "/"
+
+- name: Outcomes
+  link: "/outcomes.html"
+
+- name: Current work
+  link: "/current-work.html"
+
+- name: Meetings
+  link: "https://indico.desy.de"
