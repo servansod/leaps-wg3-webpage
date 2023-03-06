@@ -1,20 +1,21 @@
 # called items with site.data.sigs
 - name: FAIR implementation
-  mail: FAIR@PaNSIG.eu
+  mail: fair@pansig.eu
   chairs: Andy Götz (ESRF), Nicolas Soler (ALBA)
-  status: starting
-  activity: Maintain the toolkit for the implementation of FAIR at PaN facilities
+  status: active
+  mandate: "To maintain the toolkit for the implementation of FAIR at PaN facilities: DMPs, FAIR data policies, FAIR evaluation, PIDs"
   
-- name: Workflows
-  mail: workflows@PaNSIG.eu
+- name: Analysis workflows
+  mail: workflows@pansig.eu
   chairs: Majid Ounsy (SOLEIL), Fabio Dall'Antonia (Eu-XFEL)
-  status: starting
-  activity: Organise contributions to VISA, share good practices and community tools for reproducible workflows
+  status: under evaluation
+  mandate: "To organise contributions to VISA, share good practices and community tools for reproducible workflows. To investigate how those workflows may be catalogued, shared accross facilities, or run on public cloud resources, such as those provided by EOSC or EGI."
   
 - name: EOSC
-  mail: eosc@PaNSIG.eu
-  chairs:
+  mail: eosc@pansig.eu
   status: under evaluation
-  activity:  
+  mandate: "To coordinate activity across LEAPS (and LENS?) facilities; in particular, on-boarding services within the EOSC Marketplace, connecting public data repositories within EOSC. Share knowledge across facilities. To collect requirements for EOSC."
   
-  
+- name: Data catalogues
+  status: under evaluation
+  mandate: "To build and maintain a common approach for finding public data across facilities; such as OAI-PMH and the PaNOSC search API. To provide a contact point for data harvesting services (e.g., B2FIND, OpenAIRE). To coordinate approaches across different catalogue software (ICAT, SciCat, etc)."

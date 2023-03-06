@@ -1,18 +1,24 @@
 ---
 title: Current work
 ---
-<h1>Special Interest Groups</h1>
-Current work is organised in Special Interest Groups, open to all interested parties.
+<h1>{{ page.title }}</h1>
+Current work is organised in Special Interest Groups or SIGs. A SIG is a group of people from different PaN facilities, working together on a particular topic of common interest. The SIGs have defined targets and report progress back to the WG3 meetings. 
+The current list of SIGs is the following:
 
-{% assign sigs = site.data.sigs %}
-{% for sig in sigs %}
-  <h1>{{ sig.name }}</h1>
+  <ul>
+    {% for sig in site.data.sigs %}
+      {% assign uniqid = sig.name | split: " " | join: "-" %}
+      <li><a href="#{{ uniqid }}">{{ sig.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+{% for sig in site.data.sigs %}
+  {% assign uniqid = sig.name | split: " " | join: "-" %}
+  <h1 id="{{uniqid}}">{{ sig.name }} {% if sig.status %}<span class="sticker" style="float: right">{{ sig.status }}</span>{% endif %}</h1>
   {% if sig.chairs %}<h2>Chair(s): {{ sig.chairs }}</h2>{% endif %}
   <p>
-    
-    {% if sig.activity %}<strong>Activity:</strong> {{ sig.activity }}<br>{% endif %}
-    {% if sig.mail %}{{ sig.mail }}<br>{% endif %}
-    {% if sig.status %}{{ sig.status }}<br>{% endif %}
+    {% if sig.mandate %}<strong>Mandate:</strong> {{ sig.mandate }}<br>{% endif %}
+    {% if sig.mail %}<strong>Mailing list:</strong> <a href="mailto:{{sig.mail}}">{{ sig.mail }}</a><br>{% endif %}
   </p>
   
 {% endfor %}

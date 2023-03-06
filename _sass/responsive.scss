@@ -3,6 +3,10 @@
   * {
     font-size: $resp-font-size;
   }
+  
+  h1 {
+    font-size: $resp-big-font-size;
+  }
 
   body {
     margin: 0 $resp-margin-std 0 $resp-margin-std;
@@ -25,7 +29,7 @@
     height: $resp-page-height;
   }
 
-  .update, .update * {
+  .status, .status * {
     font-size: $resp-small-font-size;
   }
 

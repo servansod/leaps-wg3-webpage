@@ -1,20 +1,32 @@
 ---
 title: Outcomes
 ---
-{% assign date_today = "today" | date: "%Y-%m-%d" %}
-{% assign sorted_outcomes = site.data.outcomes %}
+<h1>{{ page.title }}</h1>
+Outcomes from projects where LEAPS WG3 members were involved are listed here.
+{% assign sorted_outcomes = site.data.outcomes | sort_natural %}
+<ul>
+  {% for outcome in sorted_outcomes %}
+    {% assign uniqid = outcome.name | split: " " | join: "-" %}
+    <li><a href="#{{ uniqid }}">{{ outcome.name }}</a></li>
+  {% endfor %}
+</ul>
 
 {% for outcome in sorted_outcomes %}
-  <h1>
+  {% assign uniqid = outcome.name | split: " " | join: "-" %}
+  <h1 id="{{uniqid}}">
     {{ outcome.name }}
     {% if outcome.doi %}<a href="https://doi.org/{{ outcome.doi }}"><img src="https://zenodo.org/badge/DOI/{{ outcome.doi }}.svg" alt="(link)" style="float: right"></a>{% endif %}
+    {% if outcome.keywords %}
+      {% assign keywords = outcome.keywords | split: ", " | sort_natural %}
+      {% for keyword in keywords %}
+        <span class="sticker">{{ keyword }}</span>
+      {% endfor %}
+    {% endif %}
   </h1>
-  
   <p>
-  {% if outcome.description %}<strong>Description:</strong> {{ outcome.description }}<br>{% endif %}
-  {% if outcome.project %}<strong>Project:</strong> {{ outcome.project }}<br>{% endif %}
-  {% if outcome.status %}<strong>Status:</strong> {{ outcome.status | capitalize }}<br>{% endif %}
-  {% if outcome.last-update %}<strong>Last update:</strong> {{ outcome.last-update | date: "%Y-%m-%d" }}<br>{% endif %}
-  {% if outcome.keywords %}<strong>Keywords:</strong> {{ outcome.keywords }}<br>{% endif %}
+    {% if outcome.description %}<strong>Description:</strong> {{ outcome.description }}<br>{% endif %}
+    {% if outcome.project %}<strong>Project:</strong> {{ outcome.project }}<br>{% endif %}
+    {% if outcome.status %}<strong>Status:</strong> {{ outcome.status | capitalize }}<br>{% endif %}
+    {% if outcome.last-update %}<strong>Last update:</strong> {{ outcome.last-update | date: "%Y-%m-%d" }}<br>{% endif %}
   </p>
 {% endfor %}
