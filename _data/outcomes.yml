@@ -11,8 +11,8 @@
   project: ExPaNDS
   description: Representation of the formal NeXus definitions, automatically created from NeXus definition files
   status: in production
-  doi: 10.5281/zenodo.xxx
-  last-update: 2023-02-28
+  doi: 10.5281/zenodo.7702023
+  last-update: 2023-03-06
   keywords: standard, metadata, PID, search
 
 - name: Ontology API service
@@ -27,8 +27,8 @@
   project: ExPaNDS, PaNOSC
   description: Backend API for services to search PaN data catalogues
   status: prototype
-  doi: 10.5281/zenodo.xxx
-  last-update: 2023-02-28
+  doi: 10.5281/zenodo.7743913
+  last-update: 2023-03-17
   keywords: search, catalogue
 
 - name: OAI-PMH endpoint for data catalogues
@@ -43,14 +43,22 @@
   project: ExPaNDS
   description: Catalogue of training material, workflows and events for the PaN community
   status: in production
-  doi: 10.5281/zenodo.xxx
-  last-update: 2023-02-28
+  doi: 10.5281/zenodo.7732603
+  last-update: 2023-03-14
   keywords: training
 
-- name: Metadata framework
-  project: ExPaNDS
-  description: 
-  status: 
+- name: VISA
+  project: PaNOSC, ExPaNDS
+  description: Remote data analysis services in a web browser, with access to huge datasets and powerful compute resources
+  status: pilot
   doi: 10.5281/zenodo.xxx
-  last-update: 2023-02-28
-  keywords: standard, metadata
+  last-update: 2023-03-17
+  keywords: data analysis, compute, data access
+
+- name: PaN FAIR implementation framework
+  project: ExPaNDS
+  description: Framework to enable FAIR data and support open science in the Photon and Neutron community
+  status: prototype
+  doi: 10.5281/zenodo.xxx
+  last-update: 2023-03-17
+  keywords: FAIR, data policy, research data management, metadata standards, DMPs, PIDs, FAIR self-assessment
