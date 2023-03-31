@@ -19,8 +19,8 @@
   project: ExPaNDS
   description: Software to expand a photon and neutron technique (PaNET) term into an equivalent search query that includes all PaNET sub-term
   status: prototype
-  doi: 10.5281/zenodo.xxx
-  last-update: 2023-02-28
+  doi: 10.5281/zenodo.7744338
+  last-update: 2023-03-17
   keywords: search
 
 - name: Search API for data catalogues
@@ -35,8 +35,8 @@
   project: ExPaNDS, PaNOSC
   description: Plugins for SciCat and Icat community data catalogues to facilitate the deployment of an OAI-PMH endpoint
   status: in production
-  doi: 10.5281/zenodo.xxx
-  last-update: 2023-02-28
+  doi: 10.5281/zenodo.7789134
+  last-update: 2023-03-31
   keywords: standard, metadata, search, catalogue
 
 - name: PaN training catalogue
@@ -51,8 +51,8 @@
   project: PaNOSC, ExPaNDS
   description: Remote data analysis services in a web browser, with access to huge datasets and powerful compute resources
   status: pilot
-  doi: 10.5281/zenodo.xxx
-  last-update: 2023-03-17
+  doi: 10.5281/zenodo.7788839
+  last-update: 2023-03-31
   keywords: data analysis, compute, data access
 
 - name: PaN FAIR implementation framework
@@ -60,5 +60,5 @@
   description: Framework to enable FAIR data and support open science in the Photon and Neutron community
   status: prototype
   doi: 10.5281/zenodo.xxx
-  last-update: 2023-03-17
+  last-update: 2023-04-28
   keywords: FAIR, data policy, research data management, metadata standards, DMPs, PIDs, FAIR self-assessment
