@@ -30,3 +30,50 @@ Outcomes from projects where LEAPS WG3 members were involved are listed here.
     {% if outcome.last-update %}<strong>Last update:</strong> {{ outcome.last-update | date: "%Y-%m-%d" }}<br>{% endif %}
   </p>
 {% endfor %}
+
+<h1>Adoption status</h1>
+{% assign adoption_outcomes = site.data.outcomes | sort_natural %} <!-- must be filtered according to need for a facility-based adoption or not -->
+<table>
+  <tr>
+    <th><strong>Facility</strong></th>
+    {% for outcome in adoption_outcomes %}
+      <th>{{ outcome.short-name }}</th>
+    {% endfor %}
+  </tr>
+  {% for facility in site.data.facilities %}
+  <tr>
+    <td>{{ facility.short-name }}</td>
+      {% for outcome in adoption_outcomes %}
+        <!-- make this better -->
+        {% if facility.adoption.adopted contains outcome.short-name %}
+          <td class='adopted'>Y</td>
+        {% elsif facility.adoption.wip contains outcome.short-name %}
+          <td class='wip'>WIP</td>
+        {% elsif facility.adoption.planned contains outcome.short-name %}
+          <td class='planned'>P</td>
+        {% elsif facility.adoption.under-eval contains outcome.short-name %}
+          <td class='ue'>U</td>
+        {% elsif facility.adoption.not contains outcome.short-name %}
+          <td class='no'>N</td>
+        {% else %}
+          <td></td>
+        {% endif %}
+      {% endfor %}
+  </tr>
+  {% endfor %}  
+</table>
+
+<!-- legend -->
+<table>
+  <tr>
+    <td class='adopted'>Yes, already adopted (Y)</td>
+    <td class='no'>Will not be adopted (N)</td>
+  </tr>
+  <tr>
+    <td class='planned'>Planned to be adopted (P)</td>
+    <td class='ue'>Under evaluation (U)</td>
+  </tr>
+  <tr>
+    <td class='wip' colspan='2'>In the progress of being adopted (WIP)</td>
+  </tr>
+</table>

@@ -1,5 +1,6 @@
 # called items with site.data.outcomes
 - name: PaNET ontology
+  short-name: PaNET
   project: ExPaNDS
   description: Taxonomy of experimental techniques relevant for the Photon and Neutron community
   status: in production
@@ -8,6 +9,7 @@
   keywords: standard, metadata, PID, search
 
 - name: Nexus ontology
+  short-name: Nexus-O
   project: ExPaNDS
   description: Representation of the formal NeXus definitions, automatically created from NeXus definition files
   status: in production
@@ -16,6 +18,7 @@
   keywords: standard, metadata, PID, search
 
 - name: Ontology API service
+  short-name: Onto-API
   project: ExPaNDS
   description: Software to expand a photon and neutron technique (PaNET) term into an equivalent search query that includes all PaNET sub-term
   status: prototype
@@ -24,6 +27,7 @@
   keywords: search
 
 - name: Search API for data catalogues
+  short-name: Search-API
   project: ExPaNDS, PaNOSC
   description: Backend API for services to search PaN data catalogues
   status: prototype
@@ -32,6 +36,7 @@
   keywords: search, catalogue
 
 - name: OAI-PMH endpoint for data catalogues
+  short-name: OAI-PMH
   project: ExPaNDS, PaNOSC
   description: Plugins for SciCat and Icat community data catalogues to facilitate the deployment of an OAI-PMH endpoint
   status: in production
@@ -40,6 +45,7 @@
   keywords: standard, metadata, search, catalogue
 
 - name: PaN training catalogue
+  short-name: PaN-training
   project: ExPaNDS
   description: Catalogue of training material, workflows and events for the PaN community
   status: in production
@@ -48,6 +54,7 @@
   keywords: training
 
 - name: VISA
+  short-name: VISA
   project: PaNOSC, ExPaNDS
   description: Remote data analysis services in a web browser, with access to huge datasets and powerful compute resources
   status: pilot
@@ -56,6 +63,7 @@
   keywords: data analysis, compute, data access
 
 - name: PaN FAIR implementation framework
+  short-name: FAIR-IF
   project: ExPaNDS
   description: Framework to enable FAIR data and support open science in the Photon and Neutron community
   status: prototype

@@ -1,0 +1,153 @@
+# called items with site.data.facilities
+- short-name: ALBA
+  pid: 
+    - type: ROR
+      id: 02j9n6e35
+  adoption:
+    adopted: 
+    wip:
+      - VISA
+          # contribution: Co-developed Kubernetes deployment
+          # link: https://visa.alba-cells.es
+      - Search-API
+      - FAIR-IF
+    planned:
+      - OAI-PMH
+      - DS-wizard
+      - AAI
+    under-eval:
+      - PaN-training
+      - PaN-learning
+      - PaNET
+    not:
+      - VINYL
+
+- short-name: DESY
+  pid:
+    - type: ROR
+      id: 01js2sh04
+    - type: GRID
+      id: grid.7683.a
+  adoption:
+    adopted:
+      - VISA
+          # contribution: Co-developed Kubernetes deployment
+          # link: https://visa.desy.de
+      - VINYL
+      - NeXus
+    wip:
+      - PaNET
+          # contribution: Participate in monthly PaNET meetings
+      - Search-API
+      - FAIR-IF
+      - OAI-PMH
+    under-eval:
+      - PaN-training
+
+- short-name: Diamond
+  adoption:
+    adopted:
+      - PaNET
+
+- short-name: Elettra
+  adoption:
+    adopted:
+      - OAI-PMH
+      - FAIR-IF
+      - AAI
+    wip:
+      - Search-API
+    under-eval:
+      - PaN-training
+      - VISA
+
+- short-name: ESRF
+  pid:
+  adoption:
+    adopted:
+      - VISA
+      - OAI-PMH
+      - Search-API
+      - AAI
+      - VINYL
+      - FAIR-IF
+    under-eval:
+      - PaN-training
+      - PaN-learning
+
+- short-name: ESS
+  adoption:
+    adopted:
+      - Search-API
+      - OAI-PMH
+    wip:
+      - VISA
+
+- short-name: EuXFEL
+  adoption:
+    adopted:
+      - Search-API
+      - OAI-PMH
+      - FAIR-IF
+      - AAI
+    wip:
+      - VISA
+      - PaN-training
+      - PaN-learning
+
+- short-name: FELIX
+
+- short-name: HZB
+  pid:
+  adoption:
+    adopted:
+      - OAI-PMH
+      - PaNET
+    not:
+      - VISA
+
+- short-name: HZDR
+  pid: 
+  adoption:
+    adopted:
+      - PaN-training
+      - OAI-PMH
+    wip:
+      - Search-API
+      - FAIR-IF
+    under-eval:
+      - PaNET
+    not:
+      - VISA
+
+- short-name: ILL
+  adoption:
+    adopted:
+      - VISA
+      - OAI-PMH
+      - FAIR-IF
+      - AAI
+      - VINYL
+    wip:
+      - Search-API
+
+- short-name: MAXIV
+
+- short-name: PSI
+  adoption:
+    adopted:
+      - Search-API
+      - OAI-PMH
+      - PaNET
+    planned:
+      - FAIR-IF
+    not:
+      - VISA
+      - VINYL
+      - PaN-training
+
+- short-name: SOLEIL
+  adoption:
+    wip:
+      - VISA
+      - FAIR-IF
